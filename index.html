@@ -37,7 +37,7 @@
                 <h3 class="typing-text">I am a <span></span> </h3>
                 
                 <p>
-                    I am a passionate IT professional with expertise in software engineering, cloud computing,  
+                    passionate IT professional with expertise in software engineering, cloud computing,  
                     network engineering, and IT support. With a strong background in web development,  
                     user experience optimization, and cybersecurity, I have worked on projects ranging from  
                     ISP business viability assessments to dynamic web platforms.  
@@ -66,7 +66,70 @@
         <div class="hire-me-container">
             <button class="hire-me">Hire Me</button>
         </div>
+
+        <section class="services">
+            <div class="service-box">
+                <img src="pic1.jpg" alt="Service 1">
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites.</p>
+            </div>
         
+            <div class="service-box">
+                <img src="pic2.jpeg" alt="Service 2">
+                <h3>Cloud Solutions</h3>
+                <p>Deploying scalable cloud infrastructure.</p>
+            </div>
+        
+            <div class="service-box">
+                <img src="pic3.jpg" alt="Service 3">
+                <h3>IT Consulting</h3>
+                <p>Optimizing IT strategies for businesses.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="pic3.jpg" alt="Service 3">
+                <h3>IT Consulting</h3>
+                <p>Optimizing IT strategies for businesses.</p>
+            </div>
+        </section>
+
+        <section class="blog">
+            <h2>Latest Blogs</h2>
+            <div class="blog-container">
+                <div class="blog-post">
+                    <img src="blog1.jpg" alt="Blog Image">
+                    <h3>Blog Title 1</h3>
+                    <p>Short description of the blog...</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="blog2.jpg" alt="Blog Image">
+                    <h3>Blog Title 2</h3>
+                    <p>Short description of the blog...</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="blog3.jpg" alt="Blog Image">
+                    <h3>Blog Title 3</h3>
+                    <p>Short description of the blog...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+        
+        
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navMenu = document.querySelector("nav ul");
+            const toggleButton = document.querySelector(".logo"); // Change if your logo isn't the toggle
+        
+            toggleButton.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+      </script> 
     </body>
+
+    
 </html>
 
