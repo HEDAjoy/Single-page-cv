@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">JoyWeb Studio</a>
+
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#Services" >Services</a>
+                <a href="#Skills" >Skills</a>
+                <a href="#Education" >Education</a>
+                <a href="#Experience" >Experience</a>
+                <a href="#Contact" >Contact</a>
+                
+            </nav>
+
+        </header>
+
+        <section class="home">
+            <div class="home-img">
+                <img src="main.jpg" alt="Logo" >
+            </div>
+            <div class="home-content">
+                <h1>
+                    I am <span class="highlight">passionate</span> about 
+                    <span class="highlight">Web Development</span> & 
+                    <span class="highlight">Software Engineering</span>
+                </h1>
+                <p>
+                    As an <span class="highlight">aspiring Game Developer</span>,  
+                    I am eager to explore the <span class="highlight">limitless possibilities</span>  
+                    of interactive experiences. My drive for learning keeps me at the forefront of technology,  
+                    continuously sharpening my skills in 
+                    <span class="highlight">Cloud Computing</span>,  
+                    <span class="highlight">Networking</span>,  
+                    <span class="highlight">Cybersecurity</span>, and  
+                    <span class="highlight">Full-Stack Development</span>.  
+                    I thrive on challenges, always seeking to expand my expertise and build  
+                    <span class="highlight">transformative digital solutions</span>.
+                </p>
+                
+                <div class="social-icons">
+                     <a href="malito:gitongajoy164@gmail.com"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="mailto:gitongajoy164@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                     <a href="https://www.instagram.com/wanheda3vice"><i class="fa-brands fa-square-instagram"></i></a>
+                     <a href="https://github.com/HEDAjoy"><i class="fa-brands fa-square-github"></i></a>
+                     <a href="https://wa.me/254793844477"><i class="fa-brands fa-whatsapp"></i></a>
+
+
+                </div>
+            </div>
+        </section>
+
+        <div class="hire-me-container">
+            <button class="hire-me">RESUME</button>
+        </div>
+
+        <section class="services">
+            <div id="Services"  class="service-box">
+                <img src="services.jpg" alt="Service 1">
+                <h3>SERVICES</h3>
+                <p>Building responsive and modern websites.</p>
+            </div>
+        
+            <div  id="Skills" class="service-box">
+                <img src="skills.jpg" alt="Service 2">
+                <h3>MY SKILLS</h3>
+                <p>Deploying scalable cloud infrastructure.</p>
+            </div>
+        
+            <div id="Education" class="service-box">
+                <img src="education.jpg" alt="Service 3">
+                <h3>EDUCATION</h3>
+                <p>Optimizing IT strategies for businesses.</p>
+            </div>
+
+            <div id="Experience" class="service-box">
+                <img src="Experience.jpg" alt="Service 3">
+                <h3>EXPERIENCE</h3>
+                <p>Optimizing IT strategies for businesses.</p>
+            </div>
+
+            <div id="Contact" class="service-box">
+                <img src="contactMe.jpg" alt="Service 3">
+                <h3>CONTACT</h3>
+                <p>Optimizing IT strategies for businesses.</p>
+            </div>
+
+            
+        </section>
+
+        <section class="blog">
+            <h2>Latest Blogs</h2>
+            <div class="blog-container">
+                <div class="blog-post">
+                    <img src="blog1.jpg" alt="Blog Image">
+                    <h3>Blog Title 1</h3>
+                    <p>Short description of the blog...</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="blog2.jpg" alt="Blog Image">
+                    <h3>Blog Title 2</h3>
+                    <p>Short description of the blog...</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="blog3.jpg" alt="Blog Image">
+                    <h3>Blog Title 3</h3>
+                    <p>Short description of the blog...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+        
+        
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navMenu = document.querySelector("nav ul");
+            const toggleButton = document.querySelector(".logo"); // Change if your logo isn't the toggle
+        
+            toggleButton.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+      </script> 
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", function () {
+            let fromTop = window.scrollY + 100; // Adjust for header offset
+
+            navLinks.forEach(link => {
+                const section = document.querySelector(link.getAttribute("href"));
+
+                if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                    navLinks.forEach(nav => nav.classList.remove("active"));
+                    link.classList.add("active");
+                }
+            });
+        });
+    });
+</script>
+
+    </body>
+
+    
+</html>
+
