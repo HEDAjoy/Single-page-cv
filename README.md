@@ -9,6 +9,8 @@ This is a **responsive and interactive CV website** built to highlight my:
 ✅ Services & projects  
 ✅ Contact details & social links  
 
+
+
 ## **🛠️ Technologies Used**  
 - **HTML, CSS** – Frontend development  
 - **Font Awesome** – Icons  
@@ -36,7 +38,8 @@ This is a **responsive and interactive CV website** built to highlight my:
 3. Open `index.html` in a browser.  
 
 ## **📞 Contact Me**  
-📧 Email: gitongajoy164@gmail.com 
+📧 Email: gitongajoy164@gmail.com ![Screenshot_20250305_122159](https://github.com/user-attachments/assets/22a884a8-d22d-4649-8ac3-845981114b2a)
+
 🔗 Phone Number: +254793844477 
 
 ---
