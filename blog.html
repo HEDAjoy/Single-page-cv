@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="blog-title">Loading...</h2>
+        <img id="blog-image" src="" alt="Blog Image">
+        <p id="blog-content">Loading...</p>
+        
+        <div class="comment-section">
+            <h3>Leave a Comment</h3>
+            <textarea id="comment" rows="4" placeholder="Write your comment..."></textarea>
+            <button onclick="postComment()">Post Comment</button>
+            <div id="comments"></div>
+        </div>
+
+        <a href="index.html" class="back-btn">← Back to Blogs</a>
+    </div>
+
+    <script src="blog.js" defer></script>
+</body>
+</html>

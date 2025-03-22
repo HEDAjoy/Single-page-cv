@@ -1,0 +1,8 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+    });
+});
