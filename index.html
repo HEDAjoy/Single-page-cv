@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="blog.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -30,9 +31,6 @@
         </header>
 
         <section class="home">
-            <div class="home-img">
-                <img src="main.jpg" alt="Logo" >
-            </div>
             <div class="home-content">
                 <h1>
                     I am <span class="highlight">passionate</span> about 
@@ -70,35 +68,35 @@
 
         <section class="services">
             <div id="Services"  class="service-box" onclick="toggleSection('services-details')">
-                <img src="services.jpg" alt="Service 1">
+                <img src="/images/services.jpg" alt="Service 1">
                 <h3>SERVICES</h3>
                 <p>Building responsive and modern websites.</p>
                 <div class="details" id="services-details">More details about services...</div>
             </div>
         
             <div  id="Skills" class="service-box" onclick="toggleSection('skills-details')">
-                <img src="skills.jpg" alt="Service 2">
+                <img src="images/skills.jpg" alt="Service 2">
                 <h3>MY SKILLS</h3>
                 <p>Deploying scalable cloud infrastructure.</p>
                 <div class="details" id="skills-details">More details about skills...</div>
             </div>
         
             <div id="Education" class="service-box" onclick="toggleSection('education-details')">
-                <img src="education.jpg" alt="Service 3">
+                <img src="images/education.jpg" alt="Service 3">
                 <h3>EDUCATION</h3>
                 <p>Optimizing IT strategies for businesses.</p>
                 <div class="details" id="education-details">More details about education...</div>
             </div>
 
             <div id="Experience" class="service-box" onclick="toggleSection('experience-details')">
-                <img src="Experience.jpg" alt="Service 3">
+                <img src="images/Experience.jpg" alt="Service 3">
                 <h3>EXPERIENCE</h3>
                 <p>Optimizing IT strategies for businesses.</p>
                 <div class="details" id="experience-details">More details about experience...</div>
             </div>
 
             <div id="Contact" class="service-box" onclick="toggleSection('contact-details')">
-                <img src="contactMe.jpg" alt="Service 3">
+                <img src="images/contactMe.jpg" alt="Service 3">
                 <h3>CONTACT</h3>
                 <p>Optimizing IT strategies for businesses.</p>
                 <div class="details" id="contact-details">More details about contact...</div>
@@ -110,52 +108,17 @@
        
         <section class="blog">
             <h2>Latest Blogs</h2>
-            
+    
             <div class="blog-search">
                 <input type="text" id="search-bar" placeholder="Search blogs...">
                 <button onclick="filterBlogs()">Search</button>
             </div>
-            
-            <div class="featured-blog">
-                <img src="blogM.jpg" alt="Featured Blog">
-                <h3> Building My First Weather App: A Journey into APIs & Frontend Development</h3>
-                <p>Ever wondered how weather apps work? I did too! That’s why I decided to build one from scratch using HTML,
-                     CSS, JavaScript, and the
-                     OpenWeather API. Here’s how I did it, what I learned, and what I plan to improve.</p>
-                <a href="#">Read More</a>
-            </div>
-            
+    
             <div class="blog-container">
-                <div class="blog-post">
-                    <img src="blog1.jpg" alt="Blog Image">
-                    <h3>For my film lovers</h3>
-                    <p>Movies have a way of transporting us into different worlds, making us laugh, cry,
-                         and think deeply. In this blog, I share my favorite films—whether it's a mind-bending sci-fi, 
-                         a gripping thriller, or a heartwarming drama. From the storytelling to cinematography, I'll explore
-                          what makes these films
-                         stand out and why they hold a special place in my heart..</p>
-                    <a href="#">Read More</a>
-                </div>
-                <div class="blog-post">
-                    <img src="blog2.jpg" alt="Blog Image">
-                    <h3>My Journey in Tech</h3>
-                    <p>Technology has been more than just a passion for me—it’s been a journey of discovery, growth, and endless learning.
-                         From the moment I got my first computer in 2016 to diving deep into coding, networking, and cloud computing, every 
-                         step has shaped my skills and mindset. In this blog, I’ll share my experiences, challenges, and key lessons from my
-                          tech journey, hoping
-                         to inspire others who are walking the same path.</p>
-                    <a href="#">Read More</a>
-                </div>
-                <div class="blog-post">
-                    <img src="blog3.jpg" alt="Blog Image">
-                    <h3>How I want to start GameDev</h3>
-                    <p>Gaming has always fascinated me—not just playing, but understanding how worlds are built, mechanics are designed, and 
-                        stories come to life. Now, I’m finally taking the leap into game development. This blog will document my journey from 
-                        the basics of game engines to coding mechanics and designing immersive experiences. Whether it’s experimenting with Unity,
-                         Unreal Engine, or something entirely new, I’m excited to share my progress, challenges, and breakthroughs along the way.</p>
-                    <a href="#">Read More</a>
-                </div>
+                <!-- Blogs will be dynamically inserted here by blog.js -->
             </div>
+        </section>
+    
             
             <!-- Newsletter Subscription -->
             <div class="newsletter">
@@ -233,6 +196,11 @@
         });
     }
     </script>
+
+        <script src="menu.js"></script>
+
+
+        <script src="blog.js" defer></script>
 
     </body>
 
